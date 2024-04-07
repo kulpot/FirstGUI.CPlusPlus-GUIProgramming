@@ -1,3 +1,15 @@
+
+//------Set Config-------------
+//FirstGUI->properties
+//->Config set->All Config
+//->Platform set->All Platform
+//->Config Prop->C / C++->Additional Include Directories->edit->click New line(folderIcon)
+//->$(WXWIN)C:\Users\sunny\wxWidgets - \include->click New line(folderIcon)
+//->$(WXWIN)C:\Users\sunny\wxWidgets - \include\msvc
+//->Config Prop->Linker->System
+//->SubSystem->change toConsole to Windows
+
+
 #include <wx/wx.h>
 
 class App : public wxApp {
