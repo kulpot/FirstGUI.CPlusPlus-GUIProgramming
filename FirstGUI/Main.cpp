@@ -6,9 +6,11 @@
 //->Config Prop->C / C++->Additional Include Directories->edit->click New line(folderIcon)
 //->$(WXWIN)C:\Users\sunny\wxWidgets - \include->click New line(folderIcon)
 //->$(WXWIN)C:\Users\sunny\wxWidgets - \include\msvc
-//->Config Prop->Linker->System
-//->SubSystem->change toConsole to Windows
-
+//->Config Prop->Linker->System->SubSystem->change toConsole to Windows
+//ChangePlatform->Win32->Config Prop->Linker->General->Additional Library Directories
+//->$(WXWIN)C:\Users\sunny\wxWidgets - \lib\vc_lib
+//->ChangePlatform->x64->Config Prop->Linker->General->Additional Library Directories
+//->$(WXWIN)C:\Users\sunny\wxWidgets - \lib\vc_x64_lib
 
 #include <wx/wx.h>
 
