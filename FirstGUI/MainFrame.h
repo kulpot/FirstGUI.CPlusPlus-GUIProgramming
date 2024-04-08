@@ -2,7 +2,8 @@
 //#include <wx/frame.h>
 #include <wx/wx.h>
 
-class MainFrame
+class MainFrame	: public wxFrame
 {
+
 };
 
