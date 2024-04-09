@@ -3,5 +3,5 @@
 #include <wx/wx.h>
 
 bool App::OnInit() {
-
+	MainFrame* mainFrame = new MainFrame("C++ GUI");
 }
