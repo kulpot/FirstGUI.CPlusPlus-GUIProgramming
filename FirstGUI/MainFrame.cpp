@@ -2,5 +2,7 @@
 #include <wx/wx.h>
 
 MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
-	wxButton* button = new wxButton(this, wxID_ANY, "Button", wxPoint(150, 50), wxSize(100, 35));
+	wxPanel* panel = new wxPanel(this);
+
+	wxButton* button = new wxButton(panel, wxID_ANY, "Button", wxPoint(150, 50), wxSize(100, 35));
 }
