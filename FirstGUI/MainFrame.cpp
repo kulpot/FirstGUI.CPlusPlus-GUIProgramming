@@ -17,5 +17,11 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	wxGauge* gauge = new wxGauge(panel, wxID_ANY, 100, wxPoint(500, 255), wxSize(200, -1));
 	gauge->SetValue(75);
 
+	wxArrayString choices;
+	choices.Add("Item A");
+	choices.Add("Item B");
+	choices.Add("Item C");
+
+	wxChoice* choice = new wxChoice(panel, wxID_ANY, wxPoint(150, 375), wxSize(75, -1), choices);
 
 }
