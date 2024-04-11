@@ -35,6 +35,7 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	//wxButton button2(panel, wxID_ANY, "Button2");	//dont allocate controls like this line of code, it can cause some problems
 	//no need to de-allocate memory for wxwidgets it will delete all memory after use
 
+	//--------More Controls in wxWidgets--------------------
 	//GroupClassCtrl ref link:https://docs.wxwidgets.org/3.0/group__group__class__ctrl.html
-
+	//GroupClassPickers ref link:https://docs.wxwidgets.org/3.0/group__group__class__pickers.html
 }
