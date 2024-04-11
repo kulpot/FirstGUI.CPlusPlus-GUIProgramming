@@ -23,5 +23,6 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	choices.Add("Item C");
 
 	wxChoice* choice = new wxChoice(panel, wxID_ANY, wxPoint(150, 375), wxSize(75, -1), choices);
+	choice->Select(0);
 
 }
