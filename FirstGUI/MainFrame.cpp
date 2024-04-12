@@ -11,7 +11,7 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 		wxPoint(550, 55), wxDefaultSize, wxCHK_3STATE | wxCHK_ALLOW_3RD_STATE_FOR_USER);
 
 	wxStaticText* staticText = new wxStaticText(panel, wxID_ANY, "StaticText - NOT editable",
-		wxPoint(0, 150), wxSize(400, -1));
+		wxPoint(0, 150), wxSize(400, -1), wxALIGN_CENTER_HORIZONTAL);
 	staticText->SetBackgroundColour(*wxLIGHT_GREY);
 
 	wxTextCtrl* textCtrl = new wxTextCtrl(panel, wxID_ANY, "TextCtrl - editable", wxPoint(500, 145), wxSize(200, -1));
