@@ -14,7 +14,8 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 		wxPoint(0, 150), wxSize(400, -1), wxALIGN_CENTER_HORIZONTAL);
 	staticText->SetBackgroundColour(*wxLIGHT_GREY);
 
-	wxTextCtrl* textCtrl = new wxTextCtrl(panel, wxID_ANY, "TextCtrl - editable", wxPoint(500, 145), wxSize(200, -1));
+	wxTextCtrl* textCtrl = new wxTextCtrl(panel, wxID_ANY, "TextCtrl - editable",
+		wxPoint(500, 145), wxSize(200, -1), wxTE_PASSWORD);
 
 	wxSlider* slider = new wxSlider(panel, wxID_ANY, 25, 0, 100, wxPoint(100, 250), wxSize(200, -1));
 	
