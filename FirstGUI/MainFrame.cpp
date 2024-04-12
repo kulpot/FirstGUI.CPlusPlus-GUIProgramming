@@ -24,11 +24,11 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	gauge->SetValue(75);
 
 	wxArrayString choices;
+	choices.Add("Item C");
 	choices.Add("Item A");
 	choices.Add("Item B");
-	choices.Add("Item C");
 
-	wxChoice* choice = new wxChoice(panel, wxID_ANY, wxPoint(150, 375), wxSize(75, -1), choices);
+	wxChoice* choice = new wxChoice(panel, wxID_ANY, wxPoint(150, 375), wxSize(75, -1), choices, wxCB_SORT);
 	choice->Select(0);
 
 	wxSpinCtrl* spinCtrl = new wxSpinCtrl(panel, wxID_ANY, "", wxPoint(550, 375), wxSize(100, -1));
