@@ -10,7 +10,8 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	wxCheckBox* checkBox = new wxCheckBox(panel, wxID_ANY, "CheckBox",
 		wxPoint(550, 55), wxDefaultSize, wxCHK_3STATE | wxCHK_ALLOW_3RD_STATE_FOR_USER);
 
-	wxStaticText* staticText = new wxStaticText(panel, wxID_ANY, "StaticText - NOT editable", wxPoint(120, 150));
+	wxStaticText* staticText = new wxStaticText(panel, wxID_ANY, "StaticText - NOT editable",
+		wxPoint(0, 150), wxSize(400, -1));
 	staticText->SetBackgroundColour(*wxLIGHT_GREY);
 
 	wxTextCtrl* textCtrl = new wxTextCtrl(panel, wxID_ANY, "TextCtrl - editable", wxPoint(500, 145), wxSize(200, -1));
