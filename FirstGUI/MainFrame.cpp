@@ -63,5 +63,5 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 }
 
 void MainFrame::OnButtonClicked(wxCommandEvent& evt) {
-
+	wxLogStatus("Button Clicked");
 }
