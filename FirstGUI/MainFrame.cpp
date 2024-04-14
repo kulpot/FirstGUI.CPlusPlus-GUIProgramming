@@ -61,3 +61,7 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	////GroupClassCtrl ref link:https://docs.wxwidgets.org/3.0/group__group__class__ctrl.html
 	////GroupClassPickers ref link:https://docs.wxwidgets.org/3.0/group__group__class__pickers.html
 }
+
+void MainFrame::OnButtonClicked(wxCommandEvent& evt) {
+
+}
