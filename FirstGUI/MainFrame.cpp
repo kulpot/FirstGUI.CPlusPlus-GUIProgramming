@@ -13,6 +13,10 @@ enum IDs {
 	BUTTON_ID = 2
 };
 
+wxBEGIN_EVENT_TABLE(MainFrame, wxFrame)
+	EVT_BUTTON(BUTTON_ID, MainFrame::OnButtonClicked)
+wxEND_EVENT_TABLE()
+
 MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	wxPanel* panel = new wxPanel(this);
 
