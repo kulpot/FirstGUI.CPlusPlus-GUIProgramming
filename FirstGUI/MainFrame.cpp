@@ -10,7 +10,9 @@
 */
 
 enum IDs {
-	BUTTON_ID = 2
+	BUTTON_ID = 2,
+	SLIDER_ID = 3,
+	TEXT_ID = 4
 };
 
 wxBEGIN_EVENT_TABLE(MainFrame, wxFrame)
