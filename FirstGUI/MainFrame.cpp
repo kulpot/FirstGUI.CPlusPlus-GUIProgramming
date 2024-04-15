@@ -78,3 +78,8 @@ void MainFrame::OnSliderChanged(wxCommandEvent& evt) {
 	wxString str = wxString::Format("Slider Value: %d", evt.GetInt());
 	wxLogStatus(str);
 }
+
+void MainFrame::OnTextChanged(wxCommandEvent& evt) {
+	wxString str = wxString::Format("Text: %s", evt.GetString());
+	wxLogStatus(str);
+}
