@@ -2,10 +2,12 @@
 #include <wx/wx.h>
 //#include <wx/spinctrl.h>
 
-/*	Custom ID - Rules
+/*******Custom ID - Rules****************
 * 1 Must be positive
 * 2 Cannot be 0 or 1
 * 3 Cannot be from wxID_LOWEST (4999) to wxID_HIGHEST (5999)
+********Custom ID - Rules****************
+*
 */
 
 //enum IDs {
@@ -27,7 +29,7 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	//wxButton* button = new wxButton(panel, BUTTON_ID, "Button", wxPoint(300, 275), wxSize(200, 50));
 	//wxSlider* slider = new wxSlider(panel, SLIDER_ID, 0, 0, 100, wxPoint(300, 200), wxSize(200, -1));
 	//wxTextCtrl* text = new wxTextCtrl(panel, TEXT_ID, "", wxPoint(300, 375), wxSize(200, -1));
-	wxButton* button = new wxButton(panel, wxID_ANY, "Button", wxPoint(300, 275), wxSize(200, 50));
+	//wxButton* button = new wxButton(panel, wxID_ANY, "Button", wxPoint(300, 275), wxSize(200, 50));
 	//wxSlider* slider = new wxSlider(panel, wxID_ANY, 0, 0, 100, wxPoint(300, 200), wxSize(200, -1));
 	//wxTextCtrl* text = new wxTextCtrl(panel, wxID_ANY, "", wxPoint(300, 375), wxSize(200, -1));
 	//
@@ -37,6 +39,13 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	//
 	//button->Unbind(wxEVT_BUTTON, &MainFrame::OnButtonClicked, this);
 
+	wxButton* button1 = new wxButton(panel, wxID_ANY, "Button 1", wxPoint(300, 275), wxSize(200, 50));
+	wxButton* button2 = new wxButton(panel, wxID_ANY, "Button 2", wxPoint(300, 350), wxSize(200, 50));
+
+/********Event Propagation*********
+* Button is child of Panel and Panel is a child of MainFrame
+**********Event Propagation*********
+*/
 	//panel->Bind(wxEVT_BUTTON, &MainFrame::OnButtonClicked, this);
 	this->Bind(wxEVT_BUTTON, &MainFrame::OnButtonClicked, this);
 
