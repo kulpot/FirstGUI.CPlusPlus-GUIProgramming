@@ -37,7 +37,6 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 
 	button->Unbind(wxEVT_BUTTON, &MainFrame::OnButtonClicked, this);
 
-
 	CreateStatusBar();
 
 	//wxButton* button = new wxButton(panel, wxID_ANY, "Button", wxPoint(150, 50), wxSize(100, 35), wxBU_LEFT);
