@@ -95,7 +95,8 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 }
 
 void MainFrame::OnButtonClicked(wxCommandEvent& evt) {
-	wxLogStatus("Button Clicked");
+	//wxLogStatus("Button Clicked");
+	wxLogMessage("Button Clicked");
 }
 
 //void MainFrame::OnSliderChanged(wxCommandEvent& evt) {
