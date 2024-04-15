@@ -32,6 +32,7 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	wxTextCtrl* text = new wxTextCtrl(panel, wxID_ANY, "", wxPoint(300, 375), wxSize(200, -1));
 
 	button->Bind(wxEVT_BUTTON, &MainFrame::OnButtonClicked, this);
+	slider->Bind(wxEVT_SLIDER, &MainFrame::OnSliderChanged, this);
 
 	CreateStatusBar();
 
