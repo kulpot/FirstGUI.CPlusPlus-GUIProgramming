@@ -6,7 +6,6 @@
 * 1 Must be positive
 * 2 Cannot be 0 or 1
 * 3 Cannot be from wxID_LOWEST (4999) to wxID_HIGHEST (5999)
-
 */
 
 enum IDs {
