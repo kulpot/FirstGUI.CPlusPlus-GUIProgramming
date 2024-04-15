@@ -10,6 +10,6 @@ private:
 	void OnButtonClicked(wxCommandEvent& evt);
 	void OnSliderChanged(wxCommandEvent& evt);
 	void OnTextChanged(wxCommandEvent& evt);
-	wxDECLARE_EVENT_TABLE();
+	//wxDECLARE_EVENT_TABLE(); //static event handling
 };
 
