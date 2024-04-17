@@ -106,7 +106,7 @@ void MainFrame::OnButton1Clicked(wxCommandEvent& evt) {
 }
 
 void MainFrame::OnButton2Clicked(wxCommandEvent& evt) {
-
+	wxLogStatus("Button 2 Clicked");
 }
 
 //void MainFrame::OnSliderChanged(wxCommandEvent& evt) {
