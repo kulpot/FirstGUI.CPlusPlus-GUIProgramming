@@ -105,7 +105,9 @@ void MainFrame::OnButton1Clicked(wxCommandEvent& evt) {
 
 }
 
+void MainFrame::OnButton2Clicked(wxCommandEvent& evt) {
 
+}
 
 //void MainFrame::OnSliderChanged(wxCommandEvent& evt) {
 //	wxString str = wxString::Format("Slider Value: %d", evt.GetInt());
