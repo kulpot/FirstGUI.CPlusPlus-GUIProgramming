@@ -47,7 +47,8 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 **********Event Propagation*********
 */
 	//panel->Bind(wxEVT_BUTTON, &MainFrame::OnButtonClicked, this);
-	this->Bind(wxEVT_BUTTON, &MainFrame::OnButtonClicked, this);
+	//this->Bind(wxEVT_BUTTON, &MainFrame::OnButtonClicked, this);
+	this->Bind(wxEVT_BUTTON, &MainFrame::OnAnyButtonClicked, this);
 
 
 	CreateStatusBar();
