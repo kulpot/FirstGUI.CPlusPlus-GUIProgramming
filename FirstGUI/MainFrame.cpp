@@ -105,6 +105,7 @@ void MainFrame::OnAnyButtonClicked(wxCommandEvent & evt) {
 
 void MainFrame::OnButton1Clicked(wxCommandEvent& evt) {
 	wxLogStatus("Button 1 Clicked");
+	evt.Skip();
 }
 
 void MainFrame::OnButton2Clicked(wxCommandEvent& evt) {
