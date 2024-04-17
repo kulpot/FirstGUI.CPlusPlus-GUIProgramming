@@ -94,7 +94,8 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	////GroupClassPickers ref link:https://docs.wxwidgets.org/3.0/group__group__class__pickers.html
 }
 
-void MainFrame::OnButtonClicked(wxCommandEvent& evt) {
+//void MainFrame::OnButtonClicked(wxCommandEvent& evt) {
+void MainFrame::OnAnyButtonClicked(wxCommandEvent & evt) {
 	//wxLogStatus("Button Clicked");
 	wxLogMessage("Button Clicked");
 }
