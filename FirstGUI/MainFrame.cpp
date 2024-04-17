@@ -101,6 +101,12 @@ void MainFrame::OnAnyButtonClicked(wxCommandEvent & evt) {
 	wxLogMessage("Button Clicked");
 }
 
+void MainFrame::OnButton1Clicked(wxCommandEvent& evt) {
+
+}
+
+
+
 //void MainFrame::OnSliderChanged(wxCommandEvent& evt) {
 //	wxString str = wxString::Format("Slider Value: %d", evt.GetInt());
 //	wxLogStatus(str);
