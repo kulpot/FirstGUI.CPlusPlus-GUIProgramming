@@ -50,6 +50,7 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	//this->Bind(wxEVT_BUTTON, &MainFrame::OnButtonClicked, this);
 	this->Bind(wxEVT_BUTTON, &MainFrame::OnAnyButtonClicked, this);
 	button1->Bind(wxEVT_BUTTON, &MainFrame::OnButton1Clicked, this);
+	button2->Bind(wxEVT_BUTTON, &MainFrame::OnButton2Clicked, this);
 
 
 	CreateStatusBar();
