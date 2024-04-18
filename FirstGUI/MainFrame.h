@@ -14,5 +14,6 @@ private:
 	//void OnSliderChanged(wxCommandEvent& evt);
 	//void OnTextChanged(wxCommandEvent& evt);
 	//wxDECLARE_EVENT_TABLE(); //static event handling
+	void OnClose(wxCloseEvent& evt);
 };
 
