@@ -105,11 +105,12 @@ void MainFrame::OnAnyButtonClicked(wxCommandEvent & evt) {
 
 void MainFrame::OnButton1Clicked(wxCommandEvent& evt) {
 	wxLogStatus("Button 1 Clicked");
-	evt.Skip();
+	evt.Skip();		// will show log message
 }
 
 void MainFrame::OnButton2Clicked(wxCommandEvent& evt) {
 	wxLogStatus("Button 2 Clicked");
+	evt.Skip();
 }
 
 //void MainFrame::OnSliderChanged(wxCommandEvent& evt) {
