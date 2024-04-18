@@ -102,7 +102,7 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 
 void MainFrame::OnClose(wxCloseEvent& evt) {
 	wxLogMessage("Frame Closed");
-	evt.Skip(); // required to close the program
+	evt.Skip(); // required to close the program //NOTE: cant close if this line is not use and must close using taskbar force close
 }
 
 //void MainFrame::OnButtonClicked(wxCommandEvent& evt) {
