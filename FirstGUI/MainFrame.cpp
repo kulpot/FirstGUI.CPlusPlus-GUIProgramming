@@ -28,6 +28,9 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 
 	//------------------CONSTRUCTOR----------------------------------
 
+	CreateStatusBar();
+
+
 	//wxButton* button = new wxButton(panel, BUTTON_ID, "Button", wxPoint(300, 275), wxSize(200, 50));
 	//wxSlider* slider = new wxSlider(panel, SLIDER_ID, 0, 0, 100, wxPoint(300, 200), wxSize(200, -1));
 	//wxTextCtrl* text = new wxTextCtrl(panel, TEXT_ID, "", wxPoint(300, 375), wxSize(200, -1));
@@ -41,8 +44,8 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	//
 	//button->Unbind(wxEVT_BUTTON, &MainFrame::OnButtonClicked, this);
 
-	wxButton* button1 = new wxButton(panel, wxID_ANY, "Button 1", wxPoint(300, 275), wxSize(200, 50));
-	wxButton* button2 = new wxButton(panel, wxID_ANY, "Button 2", wxPoint(300, 350), wxSize(200, 50));
+	//wxButton* button1 = new wxButton(panel, wxID_ANY, "Button 1", wxPoint(300, 275), wxSize(200, 50));
+	//wxButton* button2 = new wxButton(panel, wxID_ANY, "Button 2", wxPoint(300, 350), wxSize(200, 50));
 
 /********Event Propagation*********
 * Button is child of Panel and Panel is a child of MainFrame
@@ -50,14 +53,10 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 */
 	//panel->Bind(wxEVT_BUTTON, &MainFrame::OnButtonClicked, this);
 	//this->Bind(wxEVT_BUTTON, &MainFrame::OnButtonClicked, this);
-	this->Bind(wxEVT_CLOSE_WINDOW, &MainFrame::OnClose, this);
-	this->Bind(wxEVT_BUTTON, &MainFrame::OnAnyButtonClicked, this);
-	button1->Bind(wxEVT_BUTTON, &MainFrame::OnButton1Clicked, this);
-	button2->Bind(wxEVT_BUTTON, &MainFrame::OnButton2Clicked, this);
-
-
-	CreateStatusBar();
-
+	//this->Bind(wxEVT_CLOSE_WINDOW, &MainFrame::OnClose, this);
+	//this->Bind(wxEVT_BUTTON, &MainFrame::OnAnyButtonClicked, this);
+	//button1->Bind(wxEVT_BUTTON, &MainFrame::OnButton1Clicked, this);
+	//button2->Bind(wxEVT_BUTTON, &MainFrame::OnButton2Clicked, this);
 	//wxButton* button = new wxButton(panel, wxID_ANY, "Button", wxPoint(150, 50), wxSize(100, 35), wxBU_LEFT);
 	//
 	//wxCheckBox* checkBox = new wxCheckBox(panel, wxID_ANY, "CheckBox",
@@ -100,26 +99,26 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	////GroupClassPickers ref link:https://docs.wxwidgets.org/3.0/group__group__class__pickers.html
 }
 
-void MainFrame::OnClose(wxCloseEvent& evt) {
-	wxLogMessage("Frame Closed");
-	evt.Skip(); // required to close the program //NOTE: cant close if this line is not use and must close using taskbar force close
-}
-
-//void MainFrame::OnButtonClicked(wxCommandEvent& evt) {
-void MainFrame::OnAnyButtonClicked(wxCommandEvent & evt) {
-	//wxLogStatus("Button Clicked");
-	wxLogMessage("Button Clicked");
-}
-
-void MainFrame::OnButton1Clicked(wxCommandEvent& evt) {
-	wxLogStatus("Button 1 Clicked");
-	evt.Skip();		// will show log message
-}
-
-void MainFrame::OnButton2Clicked(wxCommandEvent& evt) {
-	wxLogStatus("Button 2 Clicked");
-	evt.Skip();
-}
+//void MainFrame::OnClose(wxCloseEvent& evt) {
+//	wxLogMessage("Frame Closed");
+//	evt.Skip(); // required to close the program //NOTE: cant close if this line is not use and must close using taskbar force close
+//}
+//
+////void MainFrame::OnButtonClicked(wxCommandEvent& evt) {
+//void MainFrame::OnAnyButtonClicked(wxCommandEvent & evt) {
+//	//wxLogStatus("Button Clicked");
+//	wxLogMessage("Button Clicked");
+//}
+//
+//void MainFrame::OnButton1Clicked(wxCommandEvent& evt) {
+//	wxLogStatus("Button 1 Clicked");
+//	evt.Skip();		// will show log message
+//}
+//
+//void MainFrame::OnButton2Clicked(wxCommandEvent& evt) {
+//	wxLogStatus("Button 2 Clicked");
+//	evt.Skip();
+//}
 
 //void MainFrame::OnSliderChanged(wxCommandEvent& evt) {
 //	wxString str = wxString::Format("Slider Value: %d", evt.GetInt());
