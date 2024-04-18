@@ -26,6 +26,8 @@
 MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	wxPanel* panel = new wxPanel(this);
 
+	//------------------CONSTRUCTOR----------------------------------
+
 	//wxButton* button = new wxButton(panel, BUTTON_ID, "Button", wxPoint(300, 275), wxSize(200, 50));
 	//wxSlider* slider = new wxSlider(panel, SLIDER_ID, 0, 0, 100, wxPoint(300, 200), wxSize(200, -1));
 	//wxTextCtrl* text = new wxTextCtrl(panel, TEXT_ID, "", wxPoint(300, 375), wxSize(200, -1));
@@ -48,6 +50,7 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 */
 	//panel->Bind(wxEVT_BUTTON, &MainFrame::OnButtonClicked, this);
 	//this->Bind(wxEVT_BUTTON, &MainFrame::OnButtonClicked, this);
+	this->Bind(wxEVT_CLOSE_WINDOW, &MainFrame::OnClose, this);
 	this->Bind(wxEVT_BUTTON, &MainFrame::OnAnyButtonClicked, this);
 	button1->Bind(wxEVT_BUTTON, &MainFrame::OnButton1Clicked, this);
 	button2->Bind(wxEVT_BUTTON, &MainFrame::OnButton2Clicked, this);
