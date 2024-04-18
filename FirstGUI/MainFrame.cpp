@@ -102,6 +102,7 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 
 void MainFrame::OnClose(wxCloseEvent& evt) {
 	wxLogMessage("Frame Closed");
+	evt.Skip(); // required to close the program
 }
 
 //void MainFrame::OnButtonClicked(wxCommandEvent& evt) {
