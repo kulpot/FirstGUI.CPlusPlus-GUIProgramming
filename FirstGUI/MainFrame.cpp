@@ -112,8 +112,8 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 
 void MainFrame::OnMouseEvent(wxMouseEvent& evt) {
 	//wxPoint mousePos = evt.GetPosition();
-	wxPoint mousePos = wxGetMousePosition();	// Screen coordinate mouse event motion
-	mousePos = this->ScreenToClient(mousePos);
+	wxPoint mousePos = wxGetMousePosition();	// Screen coordinate mouse event motion // notice:Default is ClientToScreen
+	mousePos = this->ScreenToClient(mousePos);	//ScreenToClient: mouse event motion value unaffected when reposition the Application
 	wxString message = wxString::Format("Mouse Event Detected! (x=%d y=%d)", mousePos.x, mousePos.y);
 	//wxLogStatus("Mouse Event Detected!");
 	wxLogStatus(message);
