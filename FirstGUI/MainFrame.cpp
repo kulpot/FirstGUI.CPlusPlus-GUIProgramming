@@ -99,6 +99,10 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	////GroupClassPickers ref link:https://docs.wxwidgets.org/3.0/group__group__class__pickers.html
 }
 
+void MainFrame::OnMouseEvent(wxMouseEvent& evt) {
+
+}
+
 //void MainFrame::OnClose(wxCloseEvent& evt) {
 //	wxLogMessage("Frame Closed");
 //	evt.Skip(); // required to close the program //NOTE: cant close if this line is not use and must close using taskbar force close
