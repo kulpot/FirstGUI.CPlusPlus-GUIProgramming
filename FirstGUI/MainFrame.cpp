@@ -28,7 +28,9 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 
 	//------------------CONSTRUCTOR----------------------------------
 
-	CreateStatusBar();
+	//CreateStatusBar();
+	wxStatusBar* statusBar = CreateStatusBar();
+	statusBar->SetDoubleBuffered(true);
 
 	//----------------REF LINK(AllMouseEvents):https://docs.wxwidgets.org/3.0/classwx_mouse_event.html-----------------------
 	//panel->Bind(wxEVT_LEFT_DOWN, &MainFrame::OnMouseEvent, this);
