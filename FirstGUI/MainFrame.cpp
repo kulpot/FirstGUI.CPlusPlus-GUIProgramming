@@ -25,21 +25,22 @@
 
 MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	wxPanel* panel = new wxPanel(this);
-	wxButton* button = new wxButton(panel, wxID_ANY, "Button", wxPoint(300, 250), wxSize(200, 100));
+	//wxButton* button = new wxButton(panel, wxID_ANY, "Button", wxPoint(300, 250), wxSize(200, 100));
 
 	//------------------CONSTRUCTOR----------------------------------
 
-	//CreateStatusBar();
-	wxStatusBar* statusBar = CreateStatusBar();
-	statusBar->SetDoubleBuffered(true);
+	CreateStatusBar();
+	
+	//wxStatusBar* statusBar = CreateStatusBar();
+	//statusBar->SetDoubleBuffered(true);
 
 	//----------------REF LINK(AllMouseEvents):https://docs.wxwidgets.org/3.0/classwx_mouse_event.html-----------------------
 	//panel->Bind(wxEVT_LEFT_DOWN, &MainFrame::OnMouseEvent, this);
 	//panel->Bind(wxEVT_RIGHT_DOWN, &MainFrame::OnMouseEvent, this);
 	//panel->Bind(wxEVT_MIDDLE_DOWN, &MainFrame::OnMouseEvent, this);
 	//panel->Bind(wxEVT_LEFT_DCLICK, &MainFrame::OnMouseEvent, this);
-	panel->Bind(wxEVT_MOTION, &MainFrame::OnMouseEvent, this);
-	button->Bind(wxEVT_MOTION, &MainFrame::OnMouseEvent, this);
+	//panel->Bind(wxEVT_MOTION, &MainFrame::OnMouseEvent, this);
+	//button->Bind(wxEVT_MOTION, &MainFrame::OnMouseEvent, this);
 
 
 	//wxButton* button = new wxButton(panel, BUTTON_ID, "Button", wxPoint(300, 275), wxSize(200, 50));
@@ -110,14 +111,14 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	////GroupClassPickers ref link:https://docs.wxwidgets.org/3.0/group__group__class__pickers.html
 }
 
-void MainFrame::OnMouseEvent(wxMouseEvent& evt) {
-	//wxPoint mousePos = evt.GetPosition();
-	wxPoint mousePos = wxGetMousePosition();	// Screen coordinate mouse event motion // notice:Default is ClientToScreen
-	mousePos = this->ScreenToClient(mousePos);	//ScreenToClient: mouse event motion value unaffected when reposition the Application
-	wxString message = wxString::Format("Mouse Event Detected! (x=%d y=%d)", mousePos.x, mousePos.y);
-	//wxLogStatus("Mouse Event Detected!");
-	wxLogStatus(message);
-}
+//void MainFrame::OnMouseEvent(wxMouseEvent& evt) {
+//	//wxPoint mousePos = evt.GetPosition();
+//	wxPoint mousePos = wxGetMousePosition();	// Screen coordinate mouse event motion // notice:Default is ClientToScreen
+//	mousePos = this->ScreenToClient(mousePos);	//ScreenToClient: mouse event motion value unaffected when reposition the Application
+//	wxString message = wxString::Format("Mouse Event Detected! (x=%d y=%d)", mousePos.x, mousePos.y);
+//	//wxLogStatus("Mouse Event Detected!");
+//	wxLogStatus(message);
+//}
 
 //void MainFrame::OnClose(wxCloseEvent& evt) {
 //	wxLogMessage("Frame Closed");
