@@ -104,7 +104,8 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 void MainFrame::OnMouseEvent(wxMouseEvent& evt) {
 	wxPoint mousePos = evt.GetPosition();
 	wxString message = wxString::Format("Mouse Event Detected! (x=%d y=%d)", mousePos.x, mousePos.y);
-	wxLogStatus("Mouse Event Detected!");
+	//wxLogStatus("Mouse Event Detected!");
+	wxLogStatus(message);
 }
 
 //void MainFrame::OnClose(wxCloseEvent& evt) {
