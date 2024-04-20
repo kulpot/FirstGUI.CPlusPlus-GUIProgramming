@@ -120,8 +120,11 @@ void MainFrame::OnKeyEvent(wxKeyEvent& evt) {
 		int keyCode = evt.GetKeyCode();
 		wxLogStatus("Key Event %d", keyCode);
 	}
+	else {
+		wxLogStatus("Key Event %c", keyChar);
+	}
 
-	wxLogStatus("Key Event %c", keyChar);
+	//wxLogStatus("Key Event %c", keyChar);
 }
 
 //void MainFrame::OnMouseEvent(wxMouseEvent& evt) {
