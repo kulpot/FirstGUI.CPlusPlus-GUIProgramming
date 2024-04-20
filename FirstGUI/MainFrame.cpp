@@ -114,6 +114,11 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 }
 
 void MainFrame::OnKeyEvent(wxKeyEvent& evt) {
+	if (evt.GetUnicodeKey() == 'A') {
+		wxLogStatus("A was pressed!");
+	}
+
+
 	wxChar keyChar = evt.GetUnicodeKey();
 
 	if (keyChar == WXK_NONE) {
