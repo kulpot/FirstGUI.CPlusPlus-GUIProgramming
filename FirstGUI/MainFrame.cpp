@@ -117,7 +117,7 @@ void MainFrame::OnKeyEvent(wxKeyEvent& evt) {
 	wxChar keyChar = evt.GetUnicodeKey();
 
 	if (keyChar == WXK_NONE) {
-
+		int keyCode = evt.GetKeyCode();
 	}
 
 	wxLogStatus("Key Event %c", keyChar);
