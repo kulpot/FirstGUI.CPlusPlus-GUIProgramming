@@ -111,6 +111,10 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	////GroupClassPickers ref link:https://docs.wxwidgets.org/3.0/group__group__class__pickers.html
 }
 
+void MainFrame::OnKeyEvent(wxKeyEvent& evt) {
+	wxLogStatus("Key Event");
+}
+
 //void MainFrame::OnMouseEvent(wxMouseEvent& evt) {
 //	//wxPoint mousePos = evt.GetPosition();
 //	wxPoint mousePos = wxGetMousePosition();	// Screen coordinate mouse event motion // notice:Default is ClientToScreen
