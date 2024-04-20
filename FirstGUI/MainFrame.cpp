@@ -115,7 +115,7 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 
 void MainFrame::OnKeyEvent(wxKeyEvent& evt) {
 	wxChar keyChar = evt.GetUnicodeKey();
-	wxLogStatus("Key Event");
+	wxLogStatus("Key Event %c", keyChar);
 }
 
 //void MainFrame::OnMouseEvent(wxMouseEvent& evt) {
