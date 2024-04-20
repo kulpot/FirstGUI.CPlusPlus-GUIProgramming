@@ -29,6 +29,8 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 
 	//------------------CONSTRUCTOR----------------------------------
 
+	panel->Bind(wxEVT_KEY_DOWN, &MainFrame::OnKeyEvent, this);
+
 	CreateStatusBar();
 	
 	//wxStatusBar* statusBar = CreateStatusBar();
