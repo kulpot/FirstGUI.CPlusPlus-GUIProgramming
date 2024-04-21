@@ -25,13 +25,15 @@
 
 MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	wxPanel* panel = new wxPanel(this);
+	wxButton* btn1 = new wxButton(panel, wxID_ANY, "Button 1", wxPoint(300, 150), wxSize(200, 100));
+	wxButton* btn2 = new wxButton(panel, wxID_ANY, "Button 2", wxPoint(300, 350), wxSize(200, 100));
 	//wxButton* button = new wxButton(panel, wxID_ANY, "Button", wxPoint(300, 250), wxSize(200, 100));
 
 	//------------------CONSTRUCTOR----------------------------------
 
-	//panel->Bind(wxEVT_KEY_DOWN, &MainFrame::OnKeyEvent, this);
+	panel->Bind(wxEVT_KEY_DOWN, &MainFrame::OnKeyEvent, this);
 	//panel->Bind(wxEVT_KEY_UP, &MainFrame::OnKeyEvent, this);
-	panel->Bind(wxEVT_CHAR, &MainFrame::OnKeyEvent, this);
+	//panel->Bind(wxEVT_CHAR, &MainFrame::OnKeyEvent, this);
 
 	CreateStatusBar();
 	
