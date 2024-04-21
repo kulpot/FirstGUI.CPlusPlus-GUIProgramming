@@ -29,7 +29,8 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 
 	//------------------CONSTRUCTOR----------------------------------
 
-	panel->Bind(wxEVT_KEY_DOWN, &MainFrame::OnKeyEvent, this);
+	//panel->Bind(wxEVT_KEY_DOWN, &MainFrame::OnKeyEvent, this);
+	panel->Bind(wxEVT_KEY_UP, &MainFrame::OnKeyEvent, this);
 
 	CreateStatusBar();
 	
@@ -114,14 +115,14 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 }
 
 void MainFrame::OnKeyEvent(wxKeyEvent& evt) {
-	if (evt.GetUnicodeKey() == 'A') {
-		wxLogStatus("A was pressed!");
-	}
-	//else if (evt.GetKeyCode() == 313) {
-	else if (evt.GetKeyCode() == WXK_HOME) {
-		wxLogStatus("HOME KEY was pressed!");
-	}
-	return;
+	//if (evt.GetUnicodeKey() == 'A') {
+	//	wxLogStatus("A was pressed!");
+	//}
+	////else if (evt.GetKeyCode() == 313) {
+	//else if (evt.GetKeyCode() == WXK_HOME) {
+	//	wxLogStatus("HOME KEY was pressed!");
+	//}
+	//return;
 
 	wxChar keyChar = evt.GetUnicodeKey();
 
