@@ -117,6 +117,9 @@ void MainFrame::OnKeyEvent(wxKeyEvent& evt) {
 	if (evt.GetUnicodeKey() == 'A') {
 		wxLogStatus("A was pressed!");
 	}
+	else if (evt.GetKeyCode() == 313) {
+		wxLogStatus("HOME KEY was pressed!");
+	}
 
 
 	wxChar keyChar = evt.GetUnicodeKey();
