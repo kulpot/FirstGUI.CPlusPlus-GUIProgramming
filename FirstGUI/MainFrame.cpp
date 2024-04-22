@@ -40,6 +40,7 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 
 	CreateStatusBar();
 	
+
 	//wxStatusBar* statusBar = CreateStatusBar();
 	//statusBar->SetDoubleBuffered(true);
 
