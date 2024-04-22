@@ -34,7 +34,7 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 
 	//panel->Bind(wxEVT_KEY_DOWN, &MainFrame::OnKeyEvent, this);
 	//btn1->Bind(wxEVT_KEY_DOWN, &MainFrame::OnKeyEvent, this);
-	panel->Bind(wxEVT_KEY_DOWN, &MainFrame::OnKeyEvent, this);
+	panel->Bind(wxEVT_CHAR_HOOK, &MainFrame::OnKeyEvent, this);
 	//panel->Bind(wxEVT_KEY_UP, &MainFrame::OnKeyEvent, this);
 	//panel->Bind(wxEVT_CHAR, &MainFrame::OnKeyEvent, this);
 
