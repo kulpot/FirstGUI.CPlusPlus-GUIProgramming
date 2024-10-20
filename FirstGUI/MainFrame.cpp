@@ -51,7 +51,7 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	//panel->Bind(wxEVT_LEFT_DCLICK, &MainFrame::OnMouseEvent, this);
 	//panel->Bind(wxEVT_MOTION, &MainFrame::OnMouseEvent, this);
 	//button->Bind(wxEVT_MOTION, &MainFrame::OnMouseEvent, this);
-
+	 
 
 	//wxButton* button = new wxButton(panel, BUTTON_ID, "Button", wxPoint(300, 275), wxSize(200, 50));
 	//wxSlider* slider = new wxSlider(panel, SLIDER_ID, 0, 0, 100, wxPoint(300, 200), wxSize(200, -1));
