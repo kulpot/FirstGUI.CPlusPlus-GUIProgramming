@@ -1,7 +1,7 @@
 #include "MainFrame.h"
 #include <wx/wx.h>
 //#include <wx/spinctrl.h>
-
+ 
 /*******Custom ID - Rules****************
 * 1 Must be positive
 * 2 Cannot be 0 or 1
