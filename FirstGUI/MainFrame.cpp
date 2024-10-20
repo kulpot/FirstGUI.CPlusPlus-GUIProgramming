@@ -146,7 +146,7 @@ void MainFrame::OnKeyEvent(wxKeyEvent& evt) {
 	}
 
 	//wxLogStatus("Key Event %c", keyChar);
-}
+} 
 
 //void MainFrame::OnMouseEvent(wxMouseEvent& evt) {
 //	//wxPoint mousePos = evt.GetPosition();
