@@ -1,4 +1,4 @@
-#include "MainFrame.h"   
+#include "MainFrame.h"    
 #include <wx/wx.h>            
 //#include <wx/spinctrl.h>
    
