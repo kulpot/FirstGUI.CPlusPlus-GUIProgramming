@@ -14,7 +14,7 @@
 //	BUTTON_ID = 2,
 //	SLIDER_ID = 3,
 //	TEXT_ID = 4
-//}; 
+//};  
 
 //-------------Static event Handling------------------
 //wxBEGIN_EVENT_TABLE(MainFrame, wxFrame)
